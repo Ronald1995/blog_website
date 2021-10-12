@@ -20,18 +20,12 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.9
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install --user pipenv
-        pipenv run pipenv install
     - name: check with flake8 isort pycodestyle pylint
       uses: ricardochaves/python-lint@v1.3.0
       with:
         use-black: false
         use-mypy: false
-    - name: mypy check
-      uses: jpetrucciani/mypy-check@0.910
-    - name: Test with pytest
-      uses: xoviat/actions-pytest@0.1-alpha2
-      uses: xoviat/actions-pytest@0.1-alpha2
+        use-pylint: false
+        use-flake8: false
+        use-pycodestyle: false
+        use-isort: false

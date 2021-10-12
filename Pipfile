@@ -21,6 +21,13 @@ pydocstyle = "*"
 pytest = "*"
 yapf = "*"
 pycodestyle = "*"
+pytest-cov = "*"
+email-validator = "*"
+flask-migrate = "*"
+itsdangerous = "*"
+faker = "*"
+markdown = "*"
+bleach = "*"
 
 [dev-packages]
 
