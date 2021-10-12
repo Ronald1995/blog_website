@@ -16,6 +16,11 @@ flask-login = "*"
 flask-mail = "*"
 flask-moment = "*"
 flask-pagedown = "*"
+pylint = "*"
+pydocstyle = "*"
+pytest = "*"
+yapf = "*"
+pycodestyle = "*"
 
 [dev-packages]
 
